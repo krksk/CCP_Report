@@ -1,0 +1,41 @@
+/*Main Style*/
+body { background-color: #111111; margin-top: -60px;}
+@font-face {font-family:'minimalhard2'; src:url(source/mh2_.ttf) format('truetype');}
+
+#logo_type{top:20px; left:4%; z-index: 3; position: fixed;}
+#logoSpread{font-family: "minimalhard2"; font-weight: bolder; font-size: 1.0vw; position: fixed; color: white; z-index: 3; top: 25px; padding: 0.1vw 2vw 0.1vw 0.1vw; opacity: 0; left: 6%; visibility: hidden; transition: all 0.15s ease-in; width:400px; }
+#logo_type:hover #logoSpread {opacity: 1; left: 7%; visibility: visible;}
+
+#nav_menu{position: fixed; margin-top: 84px;}
+#nav_menu {margin-left: 71%; z-index: 3;}
+#nav_menu tr {color:white;}
+#nav_menu tr th {font-family: "minimalhard2"; font-weight: lighter; font-size: 1.0vw; padding: 0.1vw 2vw 0.1vw 0.1vw;}
+svg {margin-top: 60px; position: fixed; z-index: 2; left:-8px;}
+
+#nav_menu tr > #menu1:hover #sub-menu {opacity: 1; visibility: visible;}
+#sub-menu {position: absolute; background: #222222; opacity: 0; visibility: hidden; transition: all 0.15s ease-in; font-family: "Noto Serif KR", serif; font-size: 0.8vw;}
+#sub-menu > li {padding: 20px 25px; border-bottom: 1px solid #222222;}
+#sub-menu > li >  a {color: rgba(255,255,255,0.6); text-decoration: none;}
+
+#footer{font-family: "Noto Serif KR", serif; display: block; font-size:14px; color: white; top:-50px; width: 600px; margin:auto; position: relative; text-align: center;}
+
+/*Report*/
+#report_title{font-family: "Noto Serif KR", serif; font-size: 80px; opacity:1; color: #cccccc; top:350px; margin:auto; position: relative; text-align: center;  /*animation: move1 2s forwards;*/}
+@keyframes move1 {
+  0%{opacity:0; left: 70%;}
+  100%{opacity:1; left: 59%;}}
+
+#report_title_contents{font-family: "Noto Serif KR", serif; font-size:16px; width: 800px; opacity: 1; color: #cccccc; top:400px; margin:auto; position: relative; text-align: center; line-height:2; /*animation: opc1 1s 2s forwards;*/}
+  @keyframes opc1 {
+  0%{opacity:0;}
+  100%{opacity:1;}}
+
+#report_video{position:relative; margin:auto; left:-8px; top:-120px; z-index:-1; width: 100%; animation: vd_ani 1.5s forwards; opacity: 0;}
+@keyframes vd_ani {
+  0%{opacity:0;}
+  100%{opacity:1;}}
+
+#report_caution{font-family: "Noto Serif KR", serif; font-size:12px; width: 800px; opacity: 1; color: #cccccc; top:450px; margin:auto; position: relative; text-align: center; /*animation: opc1 1s 2s forwards;*/}
+  @keyframes opc1 {
+  0%{opacity:0;}
+  100%{opacity:1;}}

@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="source/main_style.css">
 <link href="main_style.css" rel="stylesheet" type="text/css"/>
 <link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR&display=swap" rel="stylesheet">
+<script src="source/example.js"></script>
 </head>
 <body>
   <a href="index.html">
@@ -21,13 +22,13 @@
         <th id="menu4"><a href="https://krksk.github.io/CCP_About" style="color:white; text-decoration:none;">About</th></a>
         <th id="menu1"><a href="#" style="color:white; text-decoration:none;">Profiling</a>
           <ul id="sub-menu">
-            <li><a href="#" aria-label="subemnu">1. 송혜희 양 실종 사건</a></li>
+            <li><a href="https://krksk.github.io/CCP_Prf_1/" aria-label="subemnu">1. 송혜희 양 실종 사건</a></li>
             <li><a href="https://krksk.github.io/CCP_Prf_2/index.html" aria-label="subemnu">2. 부산 아동 연쇄 살인 사건</a></li>
             <li><a href="#" aria-label="subemnu">3. 사바이 주점 학살 사건</a></li>
           </ul>
         </th>
-        <th id="menu2">Report</th>
-        <th id="menu3">Contact</th>
+        <th id="menu2"><a href="https://krksk.github.io/CCP_Report" style="color:white; text-decoration:none;">Report</th></a>
+        <th id="menu3"><a href="https://krksk.github.io/CCP_Contact" style="color:white; text-decoration:none;">Contact</th></a>
       </tr>
     </table>
   </div>
@@ -35,10 +36,17 @@
 	<rect width="100%" height="3.5vw" fill="black"></rect>
   </svg>
   <div id="footer">Copyrightⓒ 2019/All Rights Reserved - KSK</div>
-  <div id="report_title">대한민국 범죄 데이터 보고서</div>
+  <div id="report_title">대한민국 치안 현황 보고서</div>
   <div id="report_title_contents">본 보고서는 대한민국 경찰청과 대검찰청의 통계 자료를 바탕으로 한국형사정책연구원에서 범죄/형사사법 통계정보(CCJS) 통합 데이터 베이스를 집대성하여 시각화시킨 보고서이다. 이에 CCP는 이 데이터 베이스를 통해 여러분과 함께 대한민국 치안 현황을 더 넓고 쉽게 알아보고자 한다. </div>
   <div id="report_caution">※ PC에서 최적화된 인터랙션을 볼 수 있습니다.</div>
   <video id="report_video" src="source/report_video.mp4" type="video/mp4" autoplay loop muted></video>
-  <div id="report_1"><iframe width="800" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiYzA5MDZmZjItMTIxNC00NzVjLWE4ZWUtOWIxMGExYmE4OGUxIiwidCI6IjhjYmI1ZjY2LWJmMzAtNDA0My04MTQ2LTQ1YTIwNGI2MTIzMCIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe></div>
+  <!--Report_1-->
+  <div id="report_1">범죄 발생부터 검거까지의 기간</div>
+  <div id="report_1_data"><iframe width="1300" height="700" src="https://app.powerbi.com/view?r=eyJrIjoiYjYzNTRhM2ItMWFmYi00YmZlLWE3YzAtMzVmNDE1ODBiYzE0IiwidCI6IjhjYmI1ZjY2LWJmMzAtNDA0My04MTQ2LTQ1YTIwNGI2MTIzMCIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe></div>
+  <div></div>
+  <div id="report_1_citation1">* 자료 출처 : 경찰청</div>
+  <div id="report_1_citation2">* 데이터 시각화 인용 : Microsoft Power BI</div>
+  <div id="report_1_citation3">* 그래프에 마우스 커서를 올리면 상세 확인이 가능합니다.</div>
+  <div id="monitor"></div>
 </body>
 </html>
